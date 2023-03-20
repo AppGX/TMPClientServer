@@ -11,6 +11,8 @@ using SocketLib;
 
 namespace TMPServer
 {
+
+    /*
     internal class Server
     {
         public Socket server;
@@ -134,4 +136,5 @@ namespace TMPServer
             }
         }
     }
+    */
 }
