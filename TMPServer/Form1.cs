@@ -61,6 +61,7 @@ namespace TMPServer
             server.OnError += (object _sender, string msg) =>
             {
                 // Error server
+                if (_sender == null) return;
                 var item = new
                 {
                     Client = (_sender as StateObject).Id,
@@ -125,7 +126,7 @@ namespace TMPServer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox2.SelectedItem == "") return;
+            if (comboBox2.SelectedItem == null) return;
             switch (comboBox2.SelectedItem.ToString().ToLower())
             {
                 case "logs": break;
